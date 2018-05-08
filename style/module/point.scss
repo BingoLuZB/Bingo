@@ -1,0 +1,203 @@
+//引用news模板
+.point{
+  .point-banner{
+    z-index: -1;
+    background-image: url("../images/point-banner.png");
+    background-color: #252933;
+    background-size: cover;
+    background-position: center center;
+    height: 280px;
+    width: 100%;
+    position: relative;
+    .dianzuiL{
+      height: 335px;
+      width: 134px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url("../images/dianzuiL.png");
+      background-position: -210px 0px;
+    }
+    .dianzuiR{
+      height: 429px;
+      width: 172px;
+      position: absolute;
+      right: 0;
+      top: -149px;
+      background-image: url("../images/dianzuiR.png");
+
+    }
+  }
+  .support-else{
+    .support-shang{
+      line-height: 55px;
+      font-size: 16px;
+      height: 114px;
+      //border-bottom: solid #ececec 1px;
+      .support-shang-dakuang{
+        background-color: #353535;
+        height: 57px;
+        .wp{
+          position: relative;
+          height: 114px;
+          .news-up{
+            ul{
+              position: absolute;
+              left: 404px;
+              li{
+                display: inline-block;
+                margin-right: 102px;
+                color: white;
+                cursor: pointer;
+                &:hover{
+                  color: #e9c24c;
+                  border-bottom: solid #e9c24c 2px;
+                }
+              }
+            }
+          }
+          .support-down{
+            position: absolute;
+            left: 404px;
+            top: 57px;
+            ul{
+              display:none;
+              width: 660px;
+              li{
+                display: inline-block;
+                cursor: pointer;
+                margin-right: 40px;
+                &:hover{
+                  color: #e9c24c;
+                  border-bottom: solid #e9c24c 2px;
+                  //border-radius: 50px;
+                  //transform:translate()
+                }
+              }
+            }
+          }
+          .wenzibox {
+            position: absolute;
+            left: 0;
+            top: -20px;
+          }
+          .xiaozi,.news-detalied-wenzibox{
+            margin-top: 57px;
+            line-height: 52px;
+            font-size: 12px;
+            img{
+              margin-top: 20px;
+              text-align: center;
+            }
+          }
+          .news-detalied-wenzibox{
+            //float: left;
+            margin-left: 843px;
+          }
+        }
+      }
+    }
+    .point-box{
+      .point-box-shang{
+        //height: 224px;
+        border-bottom: solid #dcdcdc 1px;
+        ul{
+          padding:20px 0 42px 0;
+          li{
+            font-size: 14px;
+            display: inline-block;
+            vertical-align: top;
+            width: 192px;
+            line-height: 54px;
+            color: #4f4f4f;
+            background: #dcdcdc;
+            text-align: center;
+            margin: 0 5px 6px 0;
+            cursor: pointer;
+            &:hover{
+              color: #fae112;
+              background-color: #353535;
+            }
+          }
+        }
+      }
+      .point-box-xia{
+        ul{
+          margin-top: 40px;
+          .point-smallbox{
+            position: relative;
+            display: inline-block;
+            width: 580px;
+            height: 239px;
+            background-image: url("../images/point-smallbox.png");
+            &:nth-of-type(odd){
+              margin-right: 36px;
+            }
+            a{
+              .point-smallbox-big{
+                padding: 20px;
+                width: 540px;
+                height: 150px;
+                .point-smallbox-mini{
+                  width: 314px;
+                  padding-left: 26px;
+                  span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    &:nth-of-type(1){
+                      padding: 0 14px 0 0;
+                    }
+                    &.fendian{
+                      line-height: 50px;
+                      font-size: 20px;
+                      font-weight: 600;
+                      margin-bottom: 6px;
+                    }
+                  }
+                  p{
+                    line-height: 24px;
+                    font-size: 14px;
+                    color: #838383;
+                    &:hover{
+                      color:black;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .support-ye{
+      margin: 70px 0;
+      .ye{
+        text-align: center;
+        cursor: default;
+        li{
+          display: inline-block;
+          background: #353535;
+          border-radius:5px;
+          //&:hover{
+          //  background: #f3d633;
+          //}
+          a{
+            display: block;
+            width: 38px;
+            line-height: 38px;
+            text-align: center;
+            color: white;
+          }
+          &.shangxia{
+            a{
+              width: 68px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.asdasd{
+  width: 0;
+}

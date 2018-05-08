@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../../style/style.css" />
+    <script type="text/javascript" src="../../script/jquery.js"></script>
+
+</head>
+
+<body>
+    <div class="head">
+        <div class="logo">
+            <a href="../index.html" id="logo"></a>
+        </div>
+        <script>
+            var logo = document.getElementById("logo");
+
+            function pianyi() {
+                setInterval(function() {
+                    var zhengwen = window.screen.width;
+                    var width = document.body.clientWidth;
+                    if (zhengwen > 1200) {
+                        logo.style.left = "-" + (zhengwen - width + 400) / 2.4 + "px"
+                    } else {
+                        logo.style.left = 0
+                    }
+                    $(function() {
+                        $(".shouye").css("left", $(".logo").find("a").width() + $(".logo").find("a").position().left - 20);
+                    })
+                }, 10)
+            }
+            pianyi();
+        </script>
+        <div class="shouye">
+            <div class="banner">
+                <ul class="clearfix" id="shouye">
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="./chanpin.html">产品</a></li>
+                    <li><a href="./chanpinSupport.html">产品支持</a></li>
+                    <li><a href="./news.html">新闻资讯</a></li>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="./point.html">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="else clearfix">
+                <div class="search fl">
+                    <div class="sbox1">
+                        <span>产品</span>
+                        <span class="xiala">▼</span>
+                    </div>
+                    <div class="sbox2">
+                        <input type="text">
+                        <a href="">
+                            <img src="../..//images/search.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="turn fl">
+                    <img src="../..//images/turn.jpg" alt="">
+                    <span>English</span>
+                </div>
+            </div>
+        </div>
+        <div class="banner-down">
+            <div class="wp" id="bannerdown">
+                <ul class="down">
+                    <li><a href="./chanpin.html">氩弧焊机系列</a></li>
+                    <li><a href="./chanpin.html">气体保护焊机系列</a></li>
+                    <li><a href="./chanpin.html">整流弧焊机系列</a></li>
+                    <li><a href="./chanpin.html">切割机系列</a></li>
+                    <li><a href="./chanpin.html">自动埋弧焊机系列</a></li>
+                    <li><a href="./chanpin.html">螺柱焊系列</a></li>
+                    <li><a href="./chanpin.html">电焊机系列</a></li>
+                    <li><a href="./chanpin.html">自动角焊机系列</a></li>
+                    <li><a href="./chanpin.html">配件</a></li>
+                </ul>
+                <ul class="down">
+                    <li><a href="./chanpinSupport.html">产品荣誉</a></li>
+                    <li><a href="">产品应用</a></li>
+                    <li><a href="./chanpinSupport-Q&A.html">问题支持</a></li>
+                    <li><a href="">资料下载</a></li>
+                </ul>
+                <ul class="down">
+                    <li><a href="">公司动态</a></li>
+                    <li><a href="">行业动态</a></li>
+                    <li><a href="">焊接技巧</a></li>
+                </ul>
+                <ul class="down">
+                    <li><a href="">公司简介</a></li>
+                    <li><a href="">资质荣誉</a></li>
+                </ul>
+                <ul class="down">
+                    <li><a href="">联系方式</a></li>
+                    <li><a href="">经销网点</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<div class="news">
+    <div class="news-banner">
+        <div class="dianzuiL"></div>
+        <div class="dianzuiR"></div>
+    </div>
+    <div class="support-else">
+        <div class="support-shang">
+            <div class="support-shang-dakuang">
+                <div class="wp clearfix">
+                    <div class="news-up">
+                        <ul>
+                            <li>公司动态</li>
+                            <li>行业动态</li>
+                            <li>焊接技巧</li>
+                        </ul>
+                    </div>
+                    <div class="support-down">
+                        <ul>
+                            <li>产品认证</li>
+                            <li>专利证书</li>
+                        </ul>
+                        <ul>
+                            <li>产品应用</li>
+                            <li>产品应用</li>
+                        </ul>
+                        <ul>
+                            <li>常见问题分析</li>
+                            <li>常见问题分析</li>
+                        </ul>
+                        <ul>
+                            <li>资料下载</li>
+                            <li>资料下载</li>
+                        </ul>
+                    </div>
+                    <div class="wenzibox">
+                        <img src="../..//images/news-wenzibox.png" alt="">
+                    </div>
+                    <div class="xiaozi fr">
+                        <img src="../../images/CPshouye.jpg" alt="">
+                        <a href="">首页</a> >
+                        <a href="">新闻资讯</a> >
+                        <a href="">公司动态</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news-box wp">
+            <ul>
+                <li>
+                    <a href="news-detalied.html">
+                        <div class="news-content">
+                            <div>
+                                <h3>长胜机电再次获得成都市地方名优产品证书</h3>
+                                <h4>那大荣铁厂创建的文档，以及各种措施，以确保安全性和执行的质量，一些规则来操作它们正确地已经建立...</h4>
+                                <p>2016-08-09</p>
+                            </div>
+                            <img src="../../images/news-p1.jpg" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="news-detalied.html">
+                        <div class="news-content">
+                            <div>
+                                <h3>长胜机电再次获得成都市地方名优产品证书</h3>
+                                <h4>那大荣铁厂创建的文档，以及各种措施，以确保安全性和执行的质量，一些规则来操作它们正确地已经建立...</h4>
+                                <p>2016-08-09</p>
+                            </div>
+                            <img src="../../images/news-p2.jpg" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="news-detalied.html">
+                        <div class="news-content">
+                            <div>
+                                <h3>长胜机电再次获得成都市地方名优产品证书</h3>
+                                <h4>那大荣铁厂创建的文档，以及各种措施，以确保安全性和执行的质量，一些规则来操作它们正确地已经建立...</h4>
+                                <p>2016-08-09</p>
+                            </div>
+                            <img src="../../images/news-p1.jpg" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="news-detalied.html">
+                        <div class="news-content">
+                            <div>
+                                <h3>长胜机电再次获得成都市地方名优产品证书</h3>
+                                <h4>那大荣铁厂创建的文档，以及各种措施，以确保安全性和执行的质量，一些规则来操作它们正确地已经建立...</h4>
+                                <p>2016-08-09</p>
+                            </div>
+                            <img src="../../images/news-p2.jpg" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="news-detalied.html">
+                        <div class="news-content">
+                            <div>
+                                <h3>长胜机电再次获得成都市地方名优产品证书</h3>
+                                <h4>那大荣铁厂创建的文档，以及各种措施，以确保安全性和执行的质量，一些规则来操作它们正确地已经建立...</h4>
+                                <p>2016-08-09</p>
+                            </div>
+                            <img src="../../images/news-p1.jpg" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="news-detalied.html">
+                        <div class="news-content">
+                            <div>
+                                <h3>长胜机电再次获得成都市地方名优产品证书</h3>
+                                <h4>那大荣铁厂创建的文档，以及各种措施，以确保安全性和执行的质量，一些规则来操作它们正确地已经建立...</h4>
+                                <p>2016-08-09</p>
+                            </div>
+                            <img src="../../images/news-p2.jpg" alt="">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="support-ye">
+            <div class="ye">
+                <ul>
+                    <li class="shangxia"><a href="">上一页</a></li>
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">...</a></li>
+                    <li><a href="">9</a></li>
+                    <li class="shangxia"><a href="">下一页</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <div class="foot">
+        <div class="wp clearfix">
+            <div class="jianjie fl">
+                <div>
+                    <h1>产品</h1>
+                    <ul>
+                        <li><a href="">氩弧焊</a></li>
+                        <li><a href="">气保焊</a></li>
+                        <li><a href="">弧焊机</a></li>
+                        <li><a href="">切割机</a></li>
+                        <li><a href="">更多+</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>产品支持</h1>
+                    <ul>
+                        <li><a href="">产品资源</a></li>
+                        <li><a href="">产品应用</a></li>
+                        <li><a href="">问题支持</a></li>
+                        <li><a href="">资料下载</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>新闻资讯</h1>
+                    <ul>
+                        <li><a href="">公司动态</a></li>
+                        <li><a href="">行业动态</a></li>
+                        <li><a href="">焊接技巧</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h1>关于我们</h1>
+                    <ul>
+                        <li><a href="">公司简介</a></li>
+                        <li><a href="">发展历程</a></li>
+                        <li><a href="">资质荣誉</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>联系我们</h1>
+                    <ul>
+                        <li><a href="">联系方式</a></li>
+                        <li><a href="">营销网点</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lianxi fr">
+                <div class="wenzi">
+                    联系我们
+                </div>
+                <div>
+                    <img src="../..//images/phone.jpg" alt="">
+                </div>
+                <div class="image">
+                    <span><a href=""><img src="../..//images/weixin.png" alt=""></a></span>
+                    <span><a href=""><img src="../..//images/qq.jpg" alt=""></a></span>
+                    <span><a href=""><img src="../..//images/weibo.jpg" alt=""></a></span>
+                </div>
+            </div>
+            <div class="else fl wp">
+                长胜机电 ©2016 粤ICP备14062985号-1 Design by
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../../script/script.js"></script>
+
+</html>

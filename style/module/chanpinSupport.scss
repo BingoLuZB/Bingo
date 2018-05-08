@@ -1,0 +1,405 @@
+.support{
+  .support-banner{
+    background-image: url("../images/CPSupport-banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 280px;
+    width: 100%;
+  }
+  .support-else{
+    .support-shang{
+      line-height: 55px;
+      font-size: 16px;
+      height: 114px;
+      border-bottom: solid #ececec 1px;
+      .support-shang-dakuang{
+        background-color: #353535;
+        height: 57px;
+        .wp{
+          position: relative;
+          height: 114px;
+          .support-up{
+            ul{
+              position: absolute;
+              left: 404px;
+              li{
+                display: inline-block;
+                margin-right: 102px;
+                color: white;
+                cursor: pointer;
+                //&:nth-of-type(1){
+                //  color: #e9c24c;
+                //  border-bottom: solid #e9c24c 2px;
+                //}
+              }
+            }
+          }
+          .support-down{
+            position: absolute;
+            left: 404px;
+            top: 57px;
+            ul{
+              display:none;
+              width: 660px;
+              li{
+                display: inline-block;
+                cursor: pointer;
+                margin-right: 40px;
+                &:hover{
+                  color: #e9c24c;
+                  border-bottom: solid #e9c24c 2px;
+                  //border-radius: 50px;
+                  //transform:translate()
+                }
+              }
+            }
+          }
+          .wenzibox {
+            position: absolute;
+            left: 0;
+            top: -20px;
+          }
+          .xiaozi{
+            margin-top: 57px;
+            line-height: 52px;
+            font-size: 12px;
+            img{
+              margin-top: 20px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    .support-zhong{
+      padding: 36px 0;
+      .support-zhong-box {
+        //display: none;
+        .jianglibox{
+          position: relative;
+          display: inline-block;
+          width: 580px;
+          height: 262px;
+          //margin-bottom: 10px;
+          background-image: url("../images/jiangBG.png");
+          &:nth-of-type(1),
+          &:nth-of-type(3),
+          &:nth-of-type(5){
+            margin-right: 36px;
+          }
+          div,span,li{
+            display: inline-block;
+            vertical-align: top;
+          }
+          .jiangli{
+            margin: 19px 0 0 25px;
+          }
+          .jiangliwenzi{
+            margin: 18px 0 0 37px;
+            span{
+              font-size: 22px;
+              font-weight: 500;
+              line-height: 60px;
+            }
+            ul{
+              li{
+                width: 94px;
+                //height: 44px;
+                border: solid #a4a4a4 1px;
+                border-radius: 5px;
+                text-align: center;
+                line-height: 44px;
+                cursor: pointer;
+                margin-right: 12px;
+                img{
+                  display: inline-block;
+                  margin: 14px 5px 0 0;
+                }
+                span{
+                  width: 14px;
+                  height: 14px;
+                  padding-right: 5px;
+                  margin-top: 16px;
+                  &.jiangli-yulan{
+                    background-image: url("../images/yulan.png");
+                    background-repeat: no-repeat;
+                  }
+                  &.jiangli-xiazai{
+                    background-image: url("../images/CP-download.png");
+                    background-repeat: no-repeat;
+                  }
+                }
+                &:hover{
+                  background-color: #353535;
+                  color: #f9e014;
+                  a{
+                    color: #f9e014;
+                  }
+                  .jiangli-yulan{
+                    background-image: url("../images/yulan-yellow.jpg");
+                  }
+                  .jiangli-xiazai{
+                    background-image: url("../images/download-yellow.jpg");
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .bigyulan{
+        display: none;
+        height: 758px;
+        background-image: url("../images/bigyulan-BG.png");
+        & div, li{
+          display: inline-block;
+          vertical-align: top;
+        }
+        .bigyulan-left{
+          margin: 43px 50px 58px 50px;
+          width: 640px;
+          height: 578px;
+          .bigyulan-xiaotu{
+            margin-top: 20px;
+            .R,.L{
+              width: 18px;
+              height: 78px;
+              border: solid #e2e2e2 1px;
+              color: #5d5d5d;
+              font-size: 16px;
+              text-align: center;
+              &:hover{
+                color:#fff;
+                background-color: #5d5d5d;
+              }
+              span{
+                cursor: default;
+                display: block;
+                margin-top: 27px;
+                user-select:none;
+              }
+            }
+            .bigyulan-slideshow{
+              position: relative;
+              width: 592px;
+              height: 80px;
+              overflow: hidden;
+              .slideshow{
+                position: absolute;
+                top: 0;
+                left: 0;
+                white-space:nowrap;
+                .slide{
+                  display: inline-block;
+                  width: 115px;
+                  text-align: center;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+        .bigyulan-right{
+          width: 454px;
+          //height: 100%;
+          .bigyulan-bigfont{
+            display: block;
+            width: 324px;
+            margin: 0 auto;
+            margin-top: 82px;
+            &>span{
+              font-size: 28px;
+            }
+            &>ul{
+              display: block;
+              margin-top: 344px;
+              font-size: 14px;
+              li{
+                width: 320px;
+                height: 42px;
+                border: solid black 1px;
+                border-radius: 6px;
+                text-align: center;
+                margin-top: 14px;
+                cursor: pointer;
+                span{
+                  display: inline-block;
+                  width: 14px;
+                  height: 14px;
+                  margin: 14px 9px 0 0 ;
+                }
+                .bigyulan-yulan{
+                  background-image: url("../images/yulan.png");
+                  background-repeat: no-repeat;
+                }
+                .bigyulan-xiazai{
+                  background-image: url("../images/CP-download.png");
+                  background-repeat: no-repeat;
+                }
+                &:hover{
+                  background-color: #5d5d5d;
+                  color: #fff;
+                  a{
+                    color: #fff;
+                  }
+                  .bigyulan-yulan{
+                    background-image: url("../images/bigyulan-yulanChange.jpg");
+                  }
+                  .bigyulan-xiazai{
+                    background-image: url("../images/bigyulan-downloadChange.jpg");
+                  }
+                }
+              }
+            }
+          }
+        }
+        .back{
+          margin-top: 60px;
+          height: 50px;
+          font-size: 20px;
+          text-align: center;
+          span{
+            margin: 0 auto;
+            width: 100px;
+            display: block;
+            border: solid black 1px;
+            border-radius: 4px;
+            cursor: pointer;
+            user-select:none;
+            &:hover{
+              background-color: #5d5d5d;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    .support-question{
+      .question-frame{
+        margin-top: 36px;
+        li{
+          display: block;
+          width: 100%;
+          background-color: #f6f6f6;
+          border-bottom: solid #d9d9d9 1px;
+          border-top: solid #fff 1px;
+          .question-box{
+            width: 1122px;
+            margin: 0 auto;
+            margin-bottom: -1px;
+            .question{
+              font-size: 17px;
+              font-weight: 500;
+              border-bottom: solid #e7e7e7 1px;
+              span{
+                display: inline-block;
+                line-height: 80px;
+                &:nth-of-type(1){
+                  margin-right: 12px;
+                }
+                img{
+                  display: inline-block;
+                  vertical-align: middle;
+                }
+              }
+              .question-anniu{
+                display: inline-block;
+                vertical-align: middle;
+                width: 80px;
+                height: 80px;
+                background: url("../images/anniu.png") no-repeat center center;
+                cursor: pointer;
+                user-select: -moz-none;
+                margin-left: 60px;
+              }
+            }
+            .answer{
+              display: none;
+              font-size: 15px;
+              margin-top: 40px ;
+              span{
+                &:nth-of-type(1){
+                  margin-right: 12px;
+                }
+              }
+              .kefu{
+                display: block;
+                width: 324px;
+                height: 44px;
+                margin: 54px auto;
+                border: solid black 1px;
+                border-radius: 4px;
+                text-align: center;
+                line-height: 44px;
+                &:hover{
+                  color: #fff;
+                  background-color: #5d5d5d;
+                }
+                img{
+                  display: inline-block;
+                  vertical-align: middle;
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .support-ye{
+      margin: 70px 0;
+      .ye{
+        text-align: center;
+        cursor: default;
+        li{
+          display: inline-block;
+          background: #353535;
+          border-radius:5px;
+          //&:hover{
+          //  background: #f3d633;
+          //}
+          a{
+            display: block;
+            width: 38px;
+            line-height: 38px;
+            text-align: center;
+            color: white;
+          }
+          &.shangxia{
+            a{
+              width: 68px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.question-zhuan{
+  transform-origin:center center;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transition: transform 0.2s; //过度时间 可调
+  -moz-transition: -moz-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  -o-transition: -o-transform 0.2s;
+  -ms-transition: -ms-transform 0.2s;
+  //background-image: url("../images/yellow-arrow.png");
+}
+.question-yuanlai{
+  transform-origin:center center;
+  transform: rotate(0deg); //返回原点
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transition: transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  -o-transition: -o-transform 0.2s;
+  -ms-transition: -ms-transform 0.2s;
+  //background-image: url("../images/arrow.png");
+}

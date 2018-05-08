@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="{{basePath}}style/style.css"/>
+    <script type="text/javascript" src="{{basePath}}script/jquery.js"></script>
+
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+            <a href="{{index}}index.html"  id="logo"></a>
+        </div>
+        <script>
+            var logo = document.getElementById("logo");
+            function pianyi() {
+                setInterval(function () {
+                    var zhengwen = window.screen.width;
+                    var width = document.body.clientWidth;
+                    if(zhengwen>1200){
+                        logo.style.left = "-"+(zhengwen-width+400)/2.4+"px"
+                    }else {
+                        logo.style.left = 0
+                    }
+                    $(function () {
+                        $(".shouye").css("left",$(".logo").find("a").width() + $(".logo").find("a").position().left - 20);
+                    })
+                },10)
+            }
+            pianyi();
+        </script>
+        <div class="shouye">
+            <div class="banner">
+                <ul class="clearfix" id="shouye">
+                    <li><a href="{{index}}index.html">首页</a></li>
+                    <li><a href="{{article}}chanpin.html">产品</a></li>
+                    <li><a href="{{article}}chanpinSupport.html">产品支持</a></li>
+                    <li><a href="{{article}}news.html">新闻资讯</a></li>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="{{article}}point.html">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="else clearfix">
+                <div class="search fl">
+                    <div class="sbox1">
+                        <span>产品</span>
+                        <span class="xiala">▼</span>
+                    </div>
+                    <div class="sbox2">
+                        <input type="text">
+                        <a href="">
+                            <img src="{{basePath}}/images/search.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="turn fl">
+                    <img src="{{basePath}}/images/turn.jpg" alt="">
+                    <span>English</span>
+                </div>
+            </div>
+        </div>
+        <div class="banner-down">
+            <div class="wp" id="bannerdown">
+                <ul class="down">
+                    <li><a href="{{article}}chanpin.html">氩弧焊机系列</a></li>
+                    <li><a href="{{article}}chanpin.html">气体保护焊机系列</a></li>
+                    <li><a href="{{article}}chanpin.html">整流弧焊机系列</a></li>
+                    <li><a href="{{article}}chanpin.html">切割机系列</a></li>
+                    <li><a href="{{article}}chanpin.html">自动埋弧焊机系列</a></li>
+                    <li><a href="{{article}}chanpin.html">螺柱焊系列</a></li>
+                    <li><a href="{{article}}chanpin.html">电焊机系列</a></li>
+                    <li><a href="{{article}}chanpin.html">自动角焊机系列</a></li>
+                    <li><a href="{{article}}chanpin.html">配件</a></li>
+                </ul>
+                <ul  class="down">
+                    <li><a href="{{article}}chanpinSupport.html">产品荣誉</a></li>
+                    <li><a href="">产品应用</a></li>
+                    <li><a href="{{article}}chanpinSupport-Q&A.html">问题支持</a></li>
+                    <li><a href="">资料下载</a></li>
+                </ul>
+                <ul  class="down">
+                    <li><a href="">公司动态</a></li>
+                    <li><a href="">行业动态</a></li>
+                    <li><a href="">焊接技巧</a></li>
+                </ul>
+                <ul  class="down">
+                    <li><a href="">公司简介</a></li>
+                    <li><a href="">资质荣誉</a></li>
+                </ul>
+                <ul  class="down">
+                    <li><a href="">联系方式</a></li>
+                    <li><a href="">经销网点</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

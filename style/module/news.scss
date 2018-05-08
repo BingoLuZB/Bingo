@@ -1,0 +1,251 @@
+//引用support模板
+.news{
+  .news-banner{
+    z-index: -1;
+    background-image: url("../images/news-banner.png");
+    background-color: #252933;
+    background-size: cover;
+    background-position: center center;
+    height: 280px;
+    width: 100%;
+    position: relative;
+    .dianzuiL{
+      height: 335px;
+      width: 134px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url("../images/dianzuiL.png");
+      background-position: -210px 0px;
+    }
+    .dianzuiR{
+      height: 429px;
+      width: 172px;
+      position: absolute;
+      right: 0;
+      top: -149px;
+      background-image: url("../images/dianzuiR.png");
+
+    }
+  }
+  .support-else{
+    .support-shang{
+      line-height: 55px;
+      font-size: 16px;
+      height: 114px;
+      //border-bottom: solid #ececec 1px;
+      .support-shang-dakuang{
+        background-color: #353535;
+        height: 57px;
+        .wp{
+          position: relative;
+          height: 114px;
+          .news-up{
+            ul{
+              position: absolute;
+              left: 404px;
+              li{
+                display: inline-block;
+                margin-right: 102px;
+                color: white;
+                cursor: pointer;
+                &:hover{
+                  color: #e9c24c;
+                  border-bottom: solid #e9c24c 2px;
+                }
+              }
+            }
+          }
+          .support-down{
+            position: absolute;
+            left: 404px;
+            top: 57px;
+            ul{
+              display:none;
+              width: 660px;
+              li{
+                display: inline-block;
+                cursor: pointer;
+                margin-right: 40px;
+                &:hover{
+                  color: #e9c24c;
+                  border-bottom: solid #e9c24c 2px;
+                  //border-radius: 50px;
+                  //transform:translate()
+                }
+              }
+            }
+          }
+          .wenzibox {
+            position: absolute;
+            left: 0;
+            top: -20px;
+          }
+          .xiaozi,.news-detalied-wenzibox{
+             margin-top: 57px;
+            line-height: 52px;
+            font-size: 12px;
+            img{
+              margin-top: 20px;
+              text-align: center;
+            }
+          }
+          .news-detalied-wenzibox{
+            //float: left;
+            margin-left: 843px;
+          }
+        }
+      }
+    }
+    .news-box{
+      ul{
+        li{
+          background-image: url("../images/news-box-bg.png");
+          height: 248px;
+          display: block;
+          .news-content{
+            &:hover{
+              h4{
+                color: black;
+
+              }
+            }
+            display: block;
+            //vertical-align: middle;
+            width: 1130px;
+            height: 180px;
+            margin: 0 auto;
+            padding-top: 20px;
+            div{
+              float: left;
+              width: 890px;
+              margin-top: 30px;
+              overflow: hidden;
+              h3{
+                font-size: 22px;
+                line-height: 36px;
+              }
+              h4,p{
+                font-size: 14px;
+                line-height: 36px;
+                color: #999999;
+              }
+              h4{
+                width: 890px;
+                height: 36px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              }
+            }
+            //margin: 20px auto;
+            img{
+              float: right;
+            }
+          }
+        }
+      }
+    }
+    .support-ye{
+      margin: 70px 0;
+      .ye{
+        text-align: center;
+        cursor: default;
+        li{
+          display: inline-block;
+          background: #353535;
+          border-radius:5px;
+          //&:hover{
+          //  background: #f3d633;
+          //}
+          a{
+            display: block;
+            width: 38px;
+            line-height: 38px;
+            text-align: center;
+            color: white;
+          }
+          &.shangxia{
+            a{
+              width: 68px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .news-detalied{
+    width: 900px;
+    margin: 0 auto;
+    .allbox{
+      height: 1244px;
+      border-top: solid black 2px;
+      background-image: url("../images/allbox-bg.png");
+      .allbox-top{
+        height: 138px;
+        text-align: center;
+        border-bottom: solid #999999 1px;
+        h2{
+          padding:50px 0 16px 0;
+          font-size: 24px;
+          line-height: 24px;
+        }
+        p{
+          font-size: 12px;
+          line-height: 10px;
+          color: #999999;
+        }
+      }
+      .allbox-content{
+        width: 800px;
+        margin: 0 auto;
+        p{
+          font-size: 15px;
+          line-height: 36px;
+          &:nth-of-type(1){
+            padding: 50px 0 34px 0;
+          }
+        }
+        h1{
+          font-size: 20px;
+          line-height: 80px;
+          margin-top: 18px;
+          font-weight: 600;
+        }
+        ul{
+          cursor: default;
+          margin-top: 30px;
+          li{
+            display: inline-block;
+            padding-left: 4px;
+            &.shuzikuang{
+              text-align: center;
+              width: 32px;
+              height: 16px;
+              background-image: url("../images/shuzikuang.png");
+              //background-repeat: no-repeat;
+            }
+          }
+        }
+      }
+      .allbox-else{
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 64px;
+        span{
+          display: inline-block;
+          width: 322px;
+          line-height: 44px;
+          border: solid black 1px;
+          border-radius: 4px;
+          color: #fff;
+          background-color: #5d5d5d;
+        }
+        .no{
+          display: inline-block;
+          width: 32px;
+        }
+      }
+    }
+  }
+}

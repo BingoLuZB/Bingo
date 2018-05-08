@@ -1,0 +1,161 @@
+<template src="public/head.html" basePath="../" article="article/" index="./">
+    {
+    "useHeader": true,
+    "toBool": false,
+    "info": "这里是说明，我去掉了path",
+    "title": "首页"
+    }
+</template>
+
+<div class="centerbanner clearfix">
+    <div class="bn">
+        <!--<a href=""></a>-->
+        <div class="bannershow">
+            <div class="xianzhi">
+                <img src="../images/banner.jpg" alt="">
+                <img src="../images/banner.jpg" alt="">
+                <img src="../images/banner.jpg" alt="">
+            </div>
+        </div>
+        <script>
+            $(function () {
+                for(var k = 0;k < $(".xianzhi img").length;k++){
+                    $(".btn ul").append('<li></li>');
+                }
+                var i=0;
+                var timer = null;
+                $(".btn ul li").on("click",function () {
+                    i = $(this).index();
+                    $(".xianzhi img").eq(i).fadeIn(1000)
+                        .siblings().fadeOut(1000);
+                    $(".btn ul li").eq(i).css("backgroundColor","yellow")
+                        .siblings().css("backgroundColor","red");
+                })
+                function fad(){
+                    $(".xianzhi img").eq(i).fadeIn(1000)
+                        .siblings().fadeOut(1000);
+                    $(".btn ul li").eq(i).css("backgroundColor","yellow")
+                        .siblings().css("backgroundColor","red");
+                    i++;
+                    if(i > $(".xianzhi img").length){
+                        i = 0;
+                    }
+                };
+                timer = setInterval(fad,3000);
+            })
+        </script>
+        <div class="dianzuiL"></div>
+        <div class="dianzuiR"></div>
+        <div class="btn">
+            <ul>
+            </ul>
+        </div>
+        <div class="xuanxiang wp">
+            <div class="L"></div>
+            <div class="zhongjian">
+                <div class="slideshow">
+                    <div class="slide">
+                        <a href="#">
+                            <span class="wenzi1"></span>
+                            <span class="tupian1"></span>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <span class="wenzi1"></span>
+                            <span class="tupian1"></span>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <span class="wenzi1"></span>
+                            <span class="tupian1"></span>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <span class="wenzi1"></span>
+                            <span class="tupian1"></span>
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="#">
+                            <span class="wenzi1"></span>
+                            <span class="tupian1"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="R"></div>
+        </div>
+    </div>
+</div>
+<div class="tuijian">
+    <div class="wp">
+        <div class="shang">
+            <div class="wenzi">
+                <span>新品推荐</span>
+                <a href="#">更多产品→</a>
+            </div>
+            <div class="tuijiantu">
+               <ul>
+                   <li class="mr">
+                       <a href="">
+                           <img src="../images/tuijian.png" alt="">
+                           <span class="more">MORE</span>
+                           <span class="box"></span>
+                       </a>
+                   </li>
+                   <li class="mr">
+                       <a href="">
+                           <img src="../images/tuijian.png" alt="">
+                           <span class="more">MORE</span>
+                           <span class="box"></span>
+                       </a>
+                   </li>
+                   <li class="mr">
+                       <a href="">
+                           <img src="../images/tuijian.png" alt="">
+                           <span class="more">MORE</span>
+                           <span class="box"></span>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="">
+                           <img src="../images/tuijian.png" alt="">
+                           <span class="more">MORE</span>
+                           <span class="box"></span>
+                       </a>
+                   </li>
+
+               </ul>
+            </div>
+        </div>
+        <div class="xia">
+            <div class="box1">
+                <span>机器人为代表的自动化焊接是大势所趋</span>
+                <a href="">展出如此多的焊接机器人，焊机厂商们并不是在作秀。谈到 最近客户需求的变化时，山东奥太的张秀珊副总...
+                    <br>
+                    <br>
+                    2016-08-09
+                </a>
+            </div>
+            <div class="box2">
+                <span>第114届中国进出口商品交易会（广交会）</span>
+                <a href="">展出如此多的焊接机器人，焊机厂商们并不是在作秀。谈到 最近客户需求的变化时，山东奥太的张秀珊副总...
+                    <br>
+                    <br>
+                    2016-08-09
+                </a>
+            </div>
+            <div class="right">
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<template src="public/foot.html" basePath="../">
+
+</template>

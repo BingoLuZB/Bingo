@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../../style/style.css" />
+    <script type="text/javascript" src="../../script/jquery.js"></script>
+
+</head>
+
+<body>
+    <div class="head">
+        <div class="logo">
+            <a href="../index.html" id="logo"></a>
+        </div>
+        <script>
+            var logo = document.getElementById("logo");
+
+            function pianyi() {
+                setInterval(function() {
+                    var zhengwen = window.screen.width;
+                    var width = document.body.clientWidth;
+                    if (zhengwen > 1200) {
+                        logo.style.left = "-" + (zhengwen - width + 400) / 2.4 + "px"
+                    } else {
+                        logo.style.left = 0
+                    }
+                    $(function() {
+                        $(".shouye").css("left", $(".logo").find("a").width() + $(".logo").find("a").position().left - 20);
+                    })
+                }, 10)
+            }
+            pianyi();
+        </script>
+        <div class="shouye">
+            <div class="banner">
+                <ul class="clearfix" id="shouye">
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="./chanpin.html">产品</a></li>
+                    <li><a href="./chanpinSupport.html">产品支持</a></li>
+                    <li><a href="./news.html">新闻资讯</a></li>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="./point.html">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="else clearfix">
+                <div class="search fl">
+                    <div class="sbox1">
+                        <span>产品</span>
+                        <span class="xiala">▼</span>
+                    </div>
+                    <div class="sbox2">
+                        <input type="text">
+                        <a href="">
+                            <img src="../..//images/search.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="turn fl">
+                    <img src="../..//images/turn.jpg" alt="">
+                    <span>English</span>
+                </div>
+            </div>
+        </div>
+        <div class="banner-down">
+            <div class="wp" id="bannerdown">
+                <ul class="down">
+                    <li><a href="./chanpin.html">氩弧焊机系列</a></li>
+                    <li><a href="./chanpin.html">气体保护焊机系列</a></li>
+                    <li><a href="./chanpin.html">整流弧焊机系列</a></li>
+                    <li><a href="./chanpin.html">切割机系列</a></li>
+                    <li><a href="./chanpin.html">自动埋弧焊机系列</a></li>
+                    <li><a href="./chanpin.html">螺柱焊系列</a></li>
+                    <li><a href="./chanpin.html">电焊机系列</a></li>
+                    <li><a href="./chanpin.html">自动角焊机系列</a></li>
+                    <li><a href="./chanpin.html">配件</a></li>
+                </ul>
+                <ul class="down">
+                    <li><a href="./chanpinSupport.html">产品荣誉</a></li>
+                    <li><a href="">产品应用</a></li>
+                    <li><a href="./chanpinSupport-Q&A.html">问题支持</a></li>
+                    <li><a href="">资料下载</a></li>
+                </ul>
+                <ul class="down">
+                    <li><a href="">公司动态</a></li>
+                    <li><a href="">行业动态</a></li>
+                    <li><a href="">焊接技巧</a></li>
+                </ul>
+                <ul class="down">
+                    <li><a href="">公司简介</a></li>
+                    <li><a href="">资质荣誉</a></li>
+                </ul>
+                <ul class="down">
+                    <li><a href="">联系方式</a></li>
+                    <li><a href="">经销网点</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<div class="news">
+    <div class="news-banner">
+        <div class="dianzuiL"></div>
+        <div class="dianzuiR"></div>
+    </div>
+    <div class="support-else">
+        <div class="support-shang">
+            <div class="support-shang-dakuang">
+                <div class="wp clearfix">
+                    <div class="news-up">
+                        <ul>
+                            <li>公司动态</li>
+                            <li>行业动态</li>
+                            <li>焊接技巧</li>
+                        </ul>
+                    </div>
+                    <div class="wenzibox">
+                        <img src="../..//images/news-wenzibox.png" alt="">
+                    </div>
+                    <div class="news-detalied-wenzibox fl">
+                        <img src="../../images/CPshouye.jpg" alt="">
+                        <a href="">首页</a> >
+                        <a href="">新闻资讯</a> >
+                        <a href="">公司动态</a> >
+                        <a href="">正文</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news-detalied">
+        <div class="allbox">
+            <div class="allbox-top">
+                <h2>长胜机电 值得信赖--长胜机电闪耀第二十一届埃森展</h2>
+                <p>2016-08-09</p>
+            </div>
+            <div class="allbox-content">
+                <p>展会期间展示了奥太全系列产品：逆变焊机、机器人配套电源、管道焊机、机器人弧焊应用及自动焊设备等，并突出地演示了行业先进的焊接工艺。现场演示的产品有：Pulse MIG-500i智能化脉冲多功能焊机、MAG-350L超低飞溅薄板焊机、信息化焊接群控管理系统、机器人专用弧焊电源WSM-400R、MIG-500RP、MAG-350RL、焊接机器人系统及专机配套交流方波双丝埋弧焊等。</p>
+                <img src="../../images/allbox-contene-p1.jpg" alt="">
+                <h1>展会期间展示了奥太全系列产品</h1>
+                <p>展会期间展示了奥太全系列产品：逆变焊机、机器人配套电源、管道焊机、机器人弧焊应用及自动焊设备等，并突出地演示了行业先进的焊接工艺。现场演示的产品有：Pulse MIG-500i智能化脉冲多功能焊机、MAG-350L超低飞溅薄板焊机、信息化焊接群控管理系统、机器人专用弧焊电源WSM-400R、MIG-500RP、MAG-350RL、焊接机器人系统及专机配套交流方波双丝埋弧焊等。</p>
+                <ul>分享到:
+                    <li><a href=""><img src="../../images/qzone.jpg" alt="" title="QQ空间"></a></li>
+                    <li><a href=""><img src="../../images/cweibo.jpg" alt="" title="新浪微博"></a></li>
+                    <li><a href=""><img src="../../images/qweibo.jpg" alt="" title="QQ微博"></a></li>
+                    <li><a href=""><img src="../../images/cweixin.jpg" alt="" title="微信"></a></li>
+                    <li><a href=""><img src="../../images/jiahao.jpg" alt=""></a></li>
+                    <li class="shuzikuang">0</li>
+                </ul>
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="allbox-else">
+                <a href=""><span> <上一篇 </span></a>
+                <p class="no"></p>
+                <a href=""><span> 下一篇> </span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <div class="foot">
+        <div class="wp clearfix">
+            <div class="jianjie fl">
+                <div>
+                    <h1>产品</h1>
+                    <ul>
+                        <li><a href="">氩弧焊</a></li>
+                        <li><a href="">气保焊</a></li>
+                        <li><a href="">弧焊机</a></li>
+                        <li><a href="">切割机</a></li>
+                        <li><a href="">更多+</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>产品支持</h1>
+                    <ul>
+                        <li><a href="">产品资源</a></li>
+                        <li><a href="">产品应用</a></li>
+                        <li><a href="">问题支持</a></li>
+                        <li><a href="">资料下载</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>新闻资讯</h1>
+                    <ul>
+                        <li><a href="">公司动态</a></li>
+                        <li><a href="">行业动态</a></li>
+                        <li><a href="">焊接技巧</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h1>关于我们</h1>
+                    <ul>
+                        <li><a href="">公司简介</a></li>
+                        <li><a href="">发展历程</a></li>
+                        <li><a href="">资质荣誉</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>联系我们</h1>
+                    <ul>
+                        <li><a href="">联系方式</a></li>
+                        <li><a href="">营销网点</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lianxi fr">
+                <div class="wenzi">
+                    联系我们
+                </div>
+                <div>
+                    <img src="../..//images/phone.jpg" alt="">
+                </div>
+                <div class="image">
+                    <span><a href=""><img src="../..//images/weixin.png" alt=""></a></span>
+                    <span><a href=""><img src="../..//images/qq.jpg" alt=""></a></span>
+                    <span><a href=""><img src="../..//images/weibo.jpg" alt=""></a></span>
+                </div>
+            </div>
+            <div class="else fl wp">
+                长胜机电 ©2016 粤ICP备14062985号-1 Design by
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../../script/script.js"></script>
+
+</html>

@@ -1,0 +1,358 @@
+.chanpin{
+  .chanpinbanner{
+    background-image: url("../images/CPbanner.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 280px;
+    width: 100%;
+  }
+  .jieshao{
+    background-color: white;
+    width: 100%;
+    .xiaozi{
+      margin-left: 996px;
+      line-height: 52px;
+      font-size: 12px;
+      img{
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+    .left{
+      //position: absolute;
+      width: 250px;
+      display: inline-block;
+      vertical-align: top;
+      background-color: #f1f1f1;
+      padding-bottom: 20px;
+      &>ul{
+        margin: 20px 24px 0 24px;
+        &>li{
+          .area{
+            font-size: 15px;
+            line-height: 46px;
+            cursor: pointer;
+            &>span{
+              &:nth-of-type(1){
+                font-weight: 600;
+              }
+              &:nth-of-type(2){
+                width: 10px;
+                height: 6px;
+                float: right;
+                display: inline-block;
+                cursor: pointer;
+                line-height: 0;
+                margin-top: 18px;
+              }
+            }
+            &:after{
+              display: block;
+              width: 200px;
+              height: 2px;
+              background-image: url("../images/xian.jpg");
+              background-repeat: no-repeat;
+              content:"";
+            }
+          }
+          &>ul{
+            line-height: 33px;
+            display: none;
+            &>li{
+              a{
+                color: #767676;
+                &:hover{
+                  color: black;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    //box页面
+    .right{
+      display: inline-block;
+      vertical-align: top;
+      .allbox{
+        width: 910px;
+        height: 1207px;
+        padding-left: 36px;
+        //background: red;
+        ul{
+          li{
+            width: 280px;
+            height: 356px;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 6px;
+            overflow: hidden;
+            &.marginLR{
+              margin:0 31px 0 31px
+            }
+            a{
+              .box{
+                display: inline-block;
+                width: 280px;
+                height: 350px;
+              }
+              .more{
+                position: absolute;
+                top: 276px;
+                left: 108px;
+                width: 66px;
+                font-size: 12px;
+                line-height: 19px;
+                color: white;
+                background-color: #414143;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+      .ye{
+        margin-bottom: 80px;
+        text-align: center;
+        cursor: default;
+        li{
+          display: inline-block;
+          background: #353535;
+          border-radius:5px;
+          //&:hover{
+          //  background: #f3d633;
+          //}
+          a{
+            display: block;
+            width: 38px;
+            line-height: 38px;
+            text-align: center;
+            color: white;
+          }
+          &.shangxia{
+            a{
+              width: 68px;
+            }
+          }
+        }
+      }
+      //以上为box页面
+    }
+    //detalied页面
+    .right-detalied{
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 910px;
+      margin-left: 36px;
+      .shang{
+        height: 490px;
+        //background-color: red;
+        .shang-left{
+          .bigbox{
+            li{
+              position: absolute;
+            }
+          }
+          .small-box{
+            position: absolute;
+            top: 386px;
+            //width: 450px;
+            .L,.R{
+              img{
+                user-select: none;
+              }
+            }
+            div{
+              display: inline-block;
+              vertical-align: top;
+              cursor: pointer;
+              //overflow:hidden;
+              height: 78px;
+              &.turnL{
+                margin-right: 7px;
+              }
+            }
+            .boxkuang{
+              width: 397px;
+              overflow: hidden;
+              position: relative;
+              ul{
+                position: absolute;
+                left: 0;
+                white-space: nowrap;
+                width: 100%;
+                &:last-child{
+                  margin-right: 2px;
+                }
+                li{
+                  display: inline-block;
+                  width: 90px;
+                  height: 74px;
+                  margin-right: 6px;
+                  :hover{
+                    border: solid #ffe102 1px;
+                    margin-bottom: 1px;
+                    content:"";
+                  }
+                }
+              }
+            }
+          }
+        }
+        .shang-right{
+          position: absolute;
+          left: 500px;
+          h2{
+            margin-top: 10px;
+            line-height: 86px;
+            font-size: 35px;
+            font-weight: 600;
+          }
+          p{
+            font-size: 15px;
+            line-height: 20px;
+            &:after{
+              margin-top: 26px;
+              display: block;
+              //width: 200px;
+              height: 2px;
+              background-image: url("../images/xian.jpg");
+              //background-repeat: no-repeat;
+              content:"";
+            }
+          }
+          img{
+            margin-top: 38px;
+          }
+        }
+      }
+      .xia{
+        //height: 706px;
+        width: 100%;
+        background-color: #f8f8f8;
+        padding-bottom: 50px;
+        font-size: 15px;
+        .xia-title{
+          border: solid #e6e6e6 1px;
+          border-top:solid black 1px;
+          margin-top:-1px;
+          position: relative;
+          padding-left: 46px;
+          ul{
+            li{
+              display: inline-block;
+              line-height: 50px;
+              font-weight: 600;
+              margin-right: 50px;
+              cursor: pointer;
+              &:hover{
+                border-bottom: solid black 1px;
+                margin-bottom: -1px;
+              }
+            }
+          }
+        }
+        .gaibian{
+          padding-left: 46px;
+          padding-right: 46px;
+          .xia-tedian{
+            display: block;
+            .xia-else{
+              //display: none;
+              ul{
+                li{
+                  line-height: 24px;
+                  margin-top: 40px;
+                }
+              }
+            }
+            .xia-picture{
+              //display: none;
+              margin-top: 44px;
+              li{
+                display: inline-block;
+                margin-right: 14px;
+                &:nth-of-type(3){
+                  margin-right: 0;
+                }
+              }
+            }
+          }
+          .xia-download{
+            display: none;
+            font-size: 15px;
+            .same{
+              height: 60px;
+              background: #ececec;
+              margin-top: 10px;
+              &:nth-of-type(1){
+                margin-top: 24px;
+              }
+              &:hover{
+                .pdf{
+                  background-image: url("../images/CP-pdf-yellow.jpg");
+                }
+              }
+              ul{
+                overflow: hidden;
+                &:hover{
+                  border:solid black 1px;
+                }
+                li{
+                  display: inline-block;
+                  cursor: default;
+                  &:nth-of-type(2){
+                    line-height: 60px;
+                  }
+                }
+                .pdf{
+                  float: left;
+                  width: 17px;
+                  height: 17px;
+                  background-image: url("../images/CP-pdf.jpg");
+                  margin-top: 22px;
+                  margin-right: 12px;
+
+                }
+                .download{
+                  float: right;
+                  margin-top: 24px;
+                  margin-right: 24px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.zhuan{
+  transform-origin:center center;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transition: transform 0.2s; //过度时间 可调
+  -moz-transition: -moz-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  -o-transition: -o-transform 0.2s;
+  -ms-transition: -ms-transform 0.2s;
+  background-image: url("../images/yellow-arrow.png");
+}
+.yuanlai{
+  transform-origin:center center;
+  transform: rotate(0deg); //返回原点
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transition: transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  -o-transition: -o-transform 0.2s;
+  -ms-transition: -ms-transform 0.2s;
+  background-image: url("../images/arrow.png");
+}
